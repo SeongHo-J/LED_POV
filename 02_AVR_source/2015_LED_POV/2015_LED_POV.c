@@ -3,25 +3,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-
-// SDI는 PORTA.0 CLK는 PORTA.2 LE는 PORTA.4 OE는 PORTA.6
-#define SDI_A_ON  PORTA|=1
-#define SDI_A_OFF PORTA&=~1
-
-#define CLK_A_ON  PORTA|=4
-#define CLK_A_OFF PORTA&=~4
-
-#define LE_A_ON  PORTA|=0x10
-#define LE_A_OFF PORTA&=~0x10
-
-#define OE_A_ON  PORTA&=~0x40
-#define OE_A_OFF PORTA|=0x40
-
-
-// 딜레이 시간 정의
-#define Ti 300
-#define CLKTi 20
-
+#include "LED_POV.h"
 
 // 데이터 인식 함수 정의
 void MBI_A_5026(unsigned int i){
