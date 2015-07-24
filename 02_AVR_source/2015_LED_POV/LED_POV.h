@@ -15,4 +15,4 @@
 
 // 딜레이 시간 정의
 #define Ti 300       //LED ON Time
-#define CLKTi 20     //CLK time
+#define CLKTi 0.0007     //CLK time
