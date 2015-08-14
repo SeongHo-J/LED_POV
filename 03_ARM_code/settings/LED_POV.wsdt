@@ -10,10 +10,10 @@
     <Static>
       <Workspace>
         <ColumnWidths>
-          <Column0>183</Column0>
-          <Column1>27</Column1>
-          <Column2>27</Column2>
-          <Column3>27</Column3>
+          <Column0>210</Column0>
+          <Column1>26</Column1>
+          <Column2>1</Column2>
+          <Column3>0</Column3>
         </ColumnWidths>
       </Workspace>
       <Build>
@@ -33,6 +33,7 @@
             <Session>
               <NodeDict>
                 <ExpandedNode>LED_POV</ExpandedNode>
+                <ExpandedNode>LED_POV/Output</ExpandedNode>
                 <ExpandedNode>LED_POV/src</ExpandedNode>
               </NodeDict>
             </Session>
@@ -63,13 +64,13 @@
           <SelEnd>0</SelEnd>
           <XPos2>0</XPos2>
           <YPos2>0</YPos2>
-          <SelStart2>478</SelStart2>
-          <SelEnd2>478</SelEnd2>
+          <SelStart2>17</SelStart2>
+          <SelEnd2>17</SelEnd2>
         </Tab>
         <ActiveTab>0</ActiveTab>
         <Tab>
           <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\Debug\Obj\main.o</Filename>
+          <Filename>$WS_DIR$\main.h</Filename>
           <XPos>0</XPos>
           <YPos>0</YPos>
           <SelStart>0</SelStart>
@@ -77,7 +78,7 @@
           <XPos2>0</XPos2>
           <YPos2>0</YPos2>
           <SelStart2>0</SelStart2>
-          <SelEnd2>0</SelEnd2>
+          <SelEnd2>8</SelEnd2>
         </Tab>
       </Pane>
       <ActivePane>0</ActivePane>

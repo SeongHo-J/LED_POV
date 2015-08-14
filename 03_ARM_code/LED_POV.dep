@@ -2,43 +2,63 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>3697089345</fileChecksum>
+  <fileChecksum>3092776754</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f407xG.icf</file>
+      <file>$PROJ_DIR$\Debug\Exe\LED_POV.hex</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED_POV.pbd</file>
       <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\STM32F4xx_DSP_StdPeriph_Lib_V1.5.1\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
       <file>$PROJ_DIR$\Debug\Obj\main.o</file>
       <file>$PROJ_DIR$\Debug\Exe\LED_POV.out</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\LED_POV.pbd</file>
-      <file>$PROJ_DIR$\Debug\Exe\LED_POV.hex</file>
-      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f407xG.icf</file>
-      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
     </outputs>
     <file>
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
+          <name>ICCARM</name>
+          <file> 18</file>
+        </tool>
+        <tool>
           <name>BICOMP</name>
-          <file> 3</file>
+          <file> 20</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11 2 3 4 5 6 7 0 1</file>
+        </tool>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\Debug\Exe\LED_POV.out</name>
       <outputs>
         <tool>
           <name>OBJCOPY</name>
-          <file> 5</file>
+          <file> 13</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 9 1 7 6 10 8</file>
+          <file> 12 18 9 8 10 17</file>
         </tool>
       </inputs>
     </file>
@@ -47,10 +67,14 @@
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 2</file>
+          <file> 19</file>
         </tool>
       </outputs>
     </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
   </configuration>
   <configuration>
     <name>Release</name>
