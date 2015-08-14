@@ -1,23 +1,25 @@
+#include "stm32f4xx.h"
 #include "main.h"
 
-static void delay_int_count(volatile unsigned int nTime){
-  for(;nTime>0;nTime--);
+void Delay(uint32_t nCount)
+{
+     __IO uint32_t i;   //__IO mean volatile
+      for(i=0; nCount > i; i++);
 }
 
 int main(void){
-    (*(volatile unsigned*)0x40023830)|=0x000001ff;
-    
-    (*(volatile unsigned*)0x40021C00)|=0x55555555;  //H   
-    (*(volatile unsigned*)0x40022000)|=0x55555555;  //I
+   RCC->AHB1ENR |= GPIOIEN|GPIOHEN;
+   GPIOH->MODER |= GPIO_MODER_MODER2_0|GPIO_MODER_MODER3_0;  
+   GPIOI->MODER |= GPIO_MODER_MODER8_0|GPIO_MODER_MODER10_0;    
     
   
   while(1){
-    GPIOH_BSRR |= S_LED3|S_LED4;
-    GPIOI_BSRR |= S_LED9|S_LED11;   
-    delay_int_count(600000); 
+    GPIOH->BSRRL |= LED3|LED4;
+    GPIOI->BSRRL |= LED9|LED11;   
+    Delay(10000000); 
     
-    GPIOH_BSRR |= R_LED3|R_LED4; 
-    GPIOI_BSRR |= R_LED9|R_LED11;  
-    delay_int_count(600000); 
+    GPIOH->BSRRH |= LED3|LED4; 
+    GPIOI->BSRRH |= LED9|LED11;  
+    Delay(10000000); 
   }
 }

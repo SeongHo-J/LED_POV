@@ -2,7 +2,7 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>3092776754</fileChecksum>
+  <fileChecksum>3091521147</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
@@ -14,11 +14,51 @@
       <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_stm32f4xx.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_stm32f4xx.pbi</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h</file>
+      <file>$PROJ_DIR$\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h</file>
+      <file>$PROJ_DIR$\Project\STM32F4xx_StdPeriph_Templates\stm32f4xx_conf.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+      <file>$PROJ_DIR$\Libraries\CMSIS\Include\core_cm4.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\Libraries\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\Libraries\CMSIS\Include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\Libraries\CMSIS\Include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h</file>
+      <file>$PROJ_DIR$\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h</file>
       <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
       <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
       <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f40xx.s</file>
       <file>$PROJ_DIR$\main.h</file>
       <file>$TOOLKIT_DIR$\config\linker\ST\stm32f407xG.icf</file>
+      <file>$PROJ_DIR$\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c</file>
       <file>$PROJ_DIR$\Debug\Exe\LED_POV.hex</file>
       <file>$PROJ_DIR$\Debug\Obj\LED_POV.pbd</file>
       <file>$PROJ_DIR$\main.c</file>
@@ -27,23 +67,56 @@
       <file>$PROJ_DIR$\Debug\Obj\main.o</file>
       <file>$PROJ_DIR$\Debug\Exe\LED_POV.out</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_stm32f40xx.o</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\main.c</name>
+      <name>$PROJ_DIR$\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar\startup_stm32f40xx.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 18</file>
+          <file> 8</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 20</file>
+          <file> 9</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 11 2 3 4 5 6 7 0 1</file>
+          <file> 11 15 2 3 4 5 14 7 0 1 17 16 21 18 19 20 13 12 10 24 22 23 27 26 28 29 31 32 25 44 43 30 45 41 42 38 37 40 39 35 33 34 36</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 15 2 3 4 5 14 7 0 1 17 16 21 18 19 20 13 12 10 24 22 23 27 26 28 29 31 32 25 44 43 30 45 41 42 38 37 40 39 35 33 34 36</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11 15 2 3 4 5 14 7 0 1 17 16 21 18 19 20 13 12 10 24 22 23 27 26 28 29 31 32 25 44 43 30 45 41 42 38 37 40 39 35 33 34 36 50</file>
         </tool>
       </inputs>
     </file>
@@ -52,13 +125,13 @@
       <outputs>
         <tool>
           <name>OBJCOPY</name>
-          <file> 13</file>
+          <file> 53</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 12 18 9 8 10 17</file>
+          <file> 51 58 61 8 47 46 48 57</file>
         </tool>
       </inputs>
     </file>
@@ -67,14 +140,10 @@
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 19</file>
+          <file> 59</file>
         </tool>
       </outputs>
     </file>
-    <forcedrebuild>
-      <name>[MULTI_TOOL]</name>
-      <tool>ILINK</tool>
-    </forcedrebuild>
   </configuration>
   <configuration>
     <name>Release</name>

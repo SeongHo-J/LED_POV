@@ -1,38 +1,28 @@
 #include <stdint.h>
 
-#define S_LED1  ((uint32_t)0x0001)
-#define S_LED2  ((uint32_t)0x0002) 
-#define S_LED3  ((uint32_t)0x0004) 
-#define S_LED4  ((uint32_t)0x0008) 
-#define S_LED5  ((uint32_t)0x0010) 
-#define S_LED6  ((uint32_t)0x0020) 
-#define S_LED7  ((uint32_t)0x0040) 
-#define S_LED8  ((uint32_t)0x0080) 
-#define S_LED9  ((uint32_t)0x0100) 
-#define S_LED10 ((uint32_t)0x0200) 
-#define S_LED11 ((uint32_t)0x0400) 
-#define S_LED12 ((uint32_t)0x0800) 
-#define S_LED13 ((uint32_t)0x1000) 
-#define S_LED14 ((uint32_t)0x2000) 
-#define S_LED15 ((uint32_t)0x4000) 
-#define S_LED16 ((uint32_t)0x8000) 
+#define  GPIOAEN RCC_AHB1ENR_GPIOAEN
+#define  GPIOBEN RCC_AHB1ENR_GPIOBEN 
+#define  GPIOCEN RCC_AHB1ENR_GPIOCEN 
+#define  GPIODEN RCC_AHB1ENR_GPIODEN 
+#define  GPIOEEN RCC_AHB1ENR_GPIOEEN 
+#define  GPIOFEN RCC_AHB1ENR_GPIOFEN 
+#define  GPIOGEN RCC_AHB1ENR_GPIOGEN 
+#define  GPIOHEN RCC_AHB1ENR_GPIOHEN 
+#define  GPIOIEN RCC_AHB1ENR_GPIOIEN 
 
-#define R_LED1  ((uint32_t)0x00010000)
-#define R_LED2  ((uint32_t)0x00020000) 
-#define R_LED3  ((uint32_t)0x00040000) 
-#define R_LED4  ((uint32_t)0x00080000) 
-#define R_LED5  ((uint32_t)0x00100000) 
-#define R_LED6  ((uint32_t)0x00200000) 
-#define R_LED7  ((uint32_t)0x00400000) 
-#define R_LED8  ((uint32_t)0x00800000) 
-#define R_LED9  ((uint32_t)0x01000000) 
-#define R_LED10 ((uint32_t)0x02000000) 
-#define R_LED11 ((uint32_t)0x04000000) 
-#define R_LED12 ((uint32_t)0x08000000) 
-#define R_LED13 ((uint32_t)0x10000000) 
-#define R_LED14 ((uint32_t)0x20000000) 
-#define R_LED15 ((uint32_t)0x40000000) 
-#define R_LED16 ((uint32_t)0x80000000) 
-
-#define GPIOH_BSRR (*(volatile unsigned*)0x40021C18)
-#define GPIOI_BSRR (*(volatile unsigned*)0x40022018)
+#define LED1  ((uint16_t)0x0001)
+#define LED2  ((uint16_t)0x0002) 
+#define LED3  ((uint16_t)0x0004) 
+#define LED4  ((uint16_t)0x0008) 
+#define LED5  ((uint16_t)0x0010) 
+#define LED6  ((uint16_t)0x0020) 
+#define LED7  ((uint16_t)0x0040) 
+#define LED8  ((uint16_t)0x0080) 
+#define LED9  ((uint16_t)0x0100) 
+#define LED10 ((uint16_t)0x0200) 
+#define LED11 ((uint16_t)0x0400) 
+#define LED12 ((uint16_t)0x0800) 
+#define LED13 ((uint16_t)0x1000) 
+#define LED14 ((uint16_t)0x2000) 
+#define LED15 ((uint16_t)0x4000) 
+#define LED16 ((uint16_t)0x8000)

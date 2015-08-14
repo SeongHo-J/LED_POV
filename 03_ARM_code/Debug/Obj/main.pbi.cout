@@ -1,9 +1,51 @@
 "C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\main.c"
 -std=c99
 -I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Include
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\STM32F4xx_StdPeriph_Driver\inc
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\STM32F4xx_StdPeriph_Driver\src
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Project\STM32F4xx_StdPeriph_Templates
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Device\ST\STM32F4xx\Include
+-I
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4\arm\CMSIS\Include
+-I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4\arm\inc\c
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\iar
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Include
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\STM32F4xx_StdPeriph_Driver\inc
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\STM32F4xx_StdPeriph_Driver\src
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Project\STM32F4xx_StdPeriph_Templates
+-I
+C:\Users\SeongHo\Documents\LED_POV\03_ARM_code\Libraries\CMSIS\Device\ST\STM32F4xx\Include
+-I
+C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4\arm\CMSIS\Include
+-DUSE_STDPERIPH_DRIVER=0
+-DSTM32F40XX=0
 -D__CODE_MEMORY_LIST1__()=__CODE_MEM_HELPER1__(__code, 0 )
 -D__CODE_MEMORY_LIST2__(_P1)=__CODE_MEM_HELPER2__(__code, 0 ,  _P1 )
 -D__CODE_MEMORY_LIST3__(_P1, _P2)=__CODE_MEM_HELPER3__(__code, 0 ,  _P1 ,  _P2 )
@@ -231,7 +273,7 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4\arm\inc\c
 -D__HAS_LOCATED_WITH_INIT__=1
 -D__IAR_COMPILERBASE__=592900
 -D__DATE__="Aug 15 2015"
--D__TIME__="02:24:24"
+-D__TIME__="03:57:55"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1
@@ -256,6 +298,8 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4\arm\inc\c
 -D__EDG_SYSV=0
 -D__EDG_ANSIC=1
 -D__EDG_CPP0X_IL_EXTENSIONS_SUPPORTED=1
--D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4\arm\INC\c\DLib_Config_Normal.h"
--D_DLIB_CONFIG_FILE_STRING="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 6.4\\arm\\INC\\c\\DLib_Config_Normal.h"
+-DUSE_STDPERIPH_DRIVER=1
+-DSTM32F40XX=1
+-D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4\arm\INC\c\DLib_Config_Full.h"
+-D_DLIB_CONFIG_FILE_STRING="C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 6.4\\arm\\INC\\c\\DLib_Config_Full.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V6.40.2.53884/W32 for ARM"
