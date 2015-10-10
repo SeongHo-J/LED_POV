@@ -49,7 +49,6 @@
 * @brief This function handles System tick timer.
 */
 
-
 /******************************************************************************/
 /* STM32F4xx Peripheral Interrupt Handlers                                    */
 /* Add here the Interrupt Handlers for the used peripherals.                  */

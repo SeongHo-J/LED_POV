@@ -80,7 +80,7 @@ void Delay(uint32_t nTime)
 
 void delay_s(void)
 {
-  Delay(7500000);
+  Delay(5000000);
 }
 void delay_ms(void)
 {
@@ -110,27 +110,169 @@ void delay_200ns(void)
   Delay(1);
 }
 
+unsigned int k=0x0000;
+
+void G_ON(){
+  
+        for(int j=1 ; j < 4 ; j++){
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+            delay_400ns();                
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+            delay_800ns();
+        }
+        
+        HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+        delay_800ns();                
+        HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+        delay_400ns();
+        
+        for(int j=1 ; j < 21 ; j++){
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+            delay_400ns();                
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+            delay_800ns();
+        }
+}
+
+void R_ON(){
+  
+        for(int j=1 ; j < 12 ; j++){
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+            delay_400ns();                
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+            delay_800ns();
+        }
+        
+        HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+        delay_800ns();                
+        HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+        delay_400ns();
+        
+        for(int j=1 ; j < 13 ; j++){
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+            delay_400ns();                
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+            delay_800ns();
+        }
+}
+
+void B_ON(){
+  
+        for(int j=1 ; j < 20 ; j++){
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+            delay_400ns();                
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+            delay_800ns();
+        }
+        
+        HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+        delay_800ns();                
+        HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+        delay_400ns();
+        
+        for(int j=1 ; j < 5 ; j++){
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_RESET);
+            delay_400ns();                
+            HAL_GPIO_WritePin(GPIOF, k, GPIO_PIN_SET);
+            delay_800ns();
+        }
+}
+
+void OFF(){    
+        
+        for(int j=1 ; j < 25 ; j++){
+            HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_RESET);
+            delay_400ns();                
+            HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_SET);
+            delay_800ns();
+        }
+}
+
 void PUT(int i){
+  
 	if(i==1){
 		HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_RESET);
                 delay_800ns();                
                 HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_SET);
                 delay_400ns();                
 	}
+        
 	else if(i==0){
 		HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_RESET);
                 delay_400ns();                              
                 HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_SET);
                 delay_800ns();               
 	}
+        
 	else if(i==2){		
 		HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_SET);                
                 delay_60us(); 
-      
+	}	
+}
 
+void PUT_3(int i){
+  
+	if(i==1){
+		HAL_GPIO_WritePin(GPIOF, 0x0f00, GPIO_PIN_RESET);
+                delay_800ns();                
+                HAL_GPIO_WritePin(GPIOF, 0x0f00, GPIO_PIN_SET);
+                delay_400ns();                
 	}
+        
+	else if(i==0){
+		HAL_GPIO_WritePin(GPIOF, 0x0f00, GPIO_PIN_RESET);
+                delay_400ns();                              
+                HAL_GPIO_WritePin(GPIOF, 0x0f00, GPIO_PIN_SET);
+                delay_800ns();               
+	}
+        
+	else if(i==2){		
+		HAL_GPIO_WritePin(GPIOF, 0x0f00, GPIO_PIN_SET);                
+                delay_60us(); 
+	}	
+}
 
-	
+void PUT_1(int i){
+  
+	if(i==1){
+		HAL_GPIO_WritePin(GPIOF, 0xf000, GPIO_PIN_RESET);
+                delay_800ns();                
+                HAL_GPIO_WritePin(GPIOF, 0xf000, GPIO_PIN_SET);
+                delay_400ns();                
+	}
+        
+	else if(i==0){
+		HAL_GPIO_WritePin(GPIOF, 0xf000, GPIO_PIN_RESET);
+                delay_400ns();                              
+                HAL_GPIO_WritePin(GPIOF, 0xf000, GPIO_PIN_SET);
+                delay_800ns();               
+	}
+        
+	else if(i==2){		
+		HAL_GPIO_WritePin(GPIOF, 0xf000, GPIO_PIN_SET);                
+                delay_60us(); 
+	}	
+}
+void PUT_2(int i){
+  
+	if(i==1){
+		HAL_GPIO_WritePin(GPIOF, 0x00f0, GPIO_PIN_RESET);
+                delay_800ns();                
+                HAL_GPIO_WritePin(GPIOF, 0x00f0, GPIO_PIN_SET);
+                delay_400ns();                
+	}
+        
+	else if(i==0){
+		HAL_GPIO_WritePin(GPIOF, 0x00f0, GPIO_PIN_RESET);
+                delay_400ns();                              
+                HAL_GPIO_WritePin(GPIOF, 0x00f0, GPIO_PIN_SET);
+                delay_800ns();               
+	}
+        
+	else if(i==2){		
+		HAL_GPIO_WritePin(GPIOF, 0x00f0, GPIO_PIN_SET);                
+                delay_60us(); 
+	}	
 }
 
 /* USER CODE END 0 */
@@ -165,13 +307,274 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 
+    //  HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_RESET);
+    //   delay_s();                
+    //  HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_SET);
+    // delay_s();  
+  
+   k=0xf000;
+   R_ON();
+   k=0x00f0;
+   G_ON();
+   delay_s();
    
-     
-  PUT(1);
+   k=0xf000;
+   G_ON();
+   k=0x00f0;
+   B_ON();
+   delay_s();
+   
+   k=0xf000;
+   B_ON();
+   k=0x00f0;
+   R_ON();
+   delay_s();
+   
+   OFF();
+   delay_s();
+  
+  /* 
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(1);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+      
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(1);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   
+   delay_s();
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(1);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+      
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(1);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   
+   delay_s();
+
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(1);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(1);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+      
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   
+   delay_s();
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   PUT_1(0);
+   
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+      
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   PUT_2(0);
+   
+   delay_s();
+  */
+  /*  
   PUT(0);
   PUT(0);
   PUT(0);
   PUT(0);
+  PUT_1(1);
+  PUT_2(0);
+  PUT(0);
+  PUT(0);
+  PUT(0); 
+  
+  PUT(0);
+  PUT(0);
+  PUT(0);
+  PUT(0);
+  PUT_1(0);
+  PUT_2(1);
   PUT(0);
   PUT(0);
   PUT(0);
@@ -181,6 +584,31 @@ int main(void)
   PUT(0);
   PUT(0);
   PUT(0);
+  PUT(0);
+  PUT(0);
+  PUT(0);
+  delay_s();
+ 
+  
+  
+  PUT(0);
+  PUT(0);
+  PUT(0);
+  PUT(0);
+  PUT_1(0);
+  PUT_2(1);
+  PUT(0);
+  PUT(0);
+  PUT(0);
+  
+  
+  
+  PUT(0);
+  PUT(0);
+  PUT(0);
+  PUT(0);
+  PUT_1(1);
+  PUT_2(0);
   PUT(0);
   PUT(0);
   PUT(0);
@@ -194,37 +622,8 @@ int main(void)
   PUT(0);
   PUT(0);
   delay_s(); 
-  
-  
-  PUT(1);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  
-  PUT(1);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  PUT(0);
-  delay_s(); 
-  
-  
+  */
+  /*
   PUT(0);
   PUT(0);
   PUT(0);
@@ -339,7 +738,7 @@ int main(void)
   PUT(0);
   PUT(0);
   delay_s();
-
+*/
   
   /*
   HAL_GPIO_WritePin(GPIOF, 0xfffc, GPIO_PIN_SET);
