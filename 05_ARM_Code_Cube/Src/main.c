@@ -312,23 +312,53 @@ int main(void)
     //  HAL_GPIO_WritePin(GPIOF, 0xffff, GPIO_PIN_SET);
     // delay_s();  
   
-   k=0xf000;
+   k=0x0004;
    R_ON();
-   k=0x00f0;
+   k=0x0010;
+   B_ON();
+   k=0x0040;
    G_ON();
    delay_s();
    
-   k=0xf000;
+   OFF();
+   delay_ms();
+   k=0x0010;
    G_ON();
-   k=0x00f0;
+   k=0x0040;
+   R_ON();
+   k=0x0002;
    B_ON();
    delay_s();
    
-   k=0xf000;
+   OFF();
+   delay_ms();
+   k=0x0040;
    B_ON();
-   k=0x00f0;
+   k=0x0002;
+   G_ON();
+   k=0x0008;
    R_ON();
    delay_s();
+   
+   OFF();
+   delay_ms();
+   k=0x0002;
+   B_ON();
+   k=0x0008;
+   G_ON();
+   k=0x0020;
+   R_ON();
+   delay_s();
+   
+   OFF();
+   delay_ms();
+   k=0x0008;
+   B_ON();
+   k=0x0020;
+   G_ON();
+   k=0x0080;
+   R_ON();
+   delay_s();   
    
    OFF();
    delay_s();
